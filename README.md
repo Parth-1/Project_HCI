@@ -39,7 +39,7 @@ The project is organized into three distinct modules to separate concerns:
 
 ## Controls
 
-- **Mouse Drag:** Rotate the view (Camera/Cube orientation).
+- **Mouse Drag:** Rotate the view (Cube orientation).
 - **Keyboard:**
   - `U`: Up Face
   - `D`: Down Face
