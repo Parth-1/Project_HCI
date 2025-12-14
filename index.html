@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>3D Rubik's Cube Solver</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+   
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div id="cube-container"></div>
+
+   <div id="controls" class="ui-panel">
+       <h2>Controls</h2>
+       <div class="flex flex-wrap">
+           <button id="scramble-btn" class="btn">Scramble</button>
+           <button id="solve-btn" class="btn">Solve</button>
+           <button id="reset-btn" class="btn">Reset</button>
+       </div>
+   </div>
+  
+   <div id="status" class="status-indicator locked">LOCKED</div>
+
+   <div id="info" class="ui-panel">
+       <h2>How to Use</h2>
+       <p>Use keyboard keys to rotate faces.</p>
+       <p>Hold <code>Shift</code> for counter-clockwise moves.</p>
+       <div class="key-info mt-4">
+           <span><code>U</code> - Up</span>
+           <span><code>D</code> - Down</span>
+           <span><code>L</code> - Left</span>
+           <span><code>R</code> - Right</span>
+           <span><code>F</code> - Front</span>
+           <span><code>B</code> - Back</span>
+       </div>
+       <p class="mt-4">Click and drag to rotate the whole cube.</p>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
